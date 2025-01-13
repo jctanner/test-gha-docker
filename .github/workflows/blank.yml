@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: check docker info
+        run: docker info
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: find /etc
